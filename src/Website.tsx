@@ -1,30 +1,31 @@
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Header } from './Header/Header';
+import { Footer } from './Footer/Footer';
 
-function Header() {
-  return <header></header>;
-}
-
-function Footer() {
-  return <footer></footer>;
+interface SectionProps {
+  children: React.ReactNode;
+  className?: string;
 }
 
 function Main() {
   return (
     <main>
-      <div className='inline-flex items-center gap-1'>
-        <FontAwesomeIcon icon={faEnvelope} className='text-red-400' size='lg' />
-
-        <span>Email us</span>
-      </div>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
-        repudiandae voluptas atque mollitia vero maxime similique, et est
-        temporibus reiciendis tenetur esse officiis deserunt aut ad ipsam
-        explicabo exercitationem voluptates?
-      </p>
+      <Section>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
+          reprehenderit natus id fugit, ducimus sint iure qui quas totam veniam
+          voluptatum, voluptatem dignissimos odit vitae cumque autem,
+          exercitationem facilis delectus.
+        </p>
+      </Section>
     </main>
+  );
+}
+
+function Section({ children, className }: SectionProps) {
+  return (
+    <section className={`m-auto max-w-screen-xl ${className ?? ''}`.trim()}>
+      {children}
+    </section>
   );
 }
 
