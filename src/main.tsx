@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/index.css';
+import Website from './Website';
+import './index.css';
 
 const root = document.querySelector('.root');
 
 if (root) {
-  ReactDOM.createRoot(root).render(<React.StrictMode></React.StrictMode>);
+  ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+      <Website />
+    </React.StrictMode>
+  );
 } else {
   console.log(`Root element not found.`);
 }
