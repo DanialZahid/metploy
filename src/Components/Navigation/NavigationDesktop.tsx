@@ -5,8 +5,8 @@ const navItems = [
   },
 
   {
-    name: 'About Us',
-    link: '/#about-us',
+    name: 'Clients',
+    link: '/#clients',
   },
 
   {
