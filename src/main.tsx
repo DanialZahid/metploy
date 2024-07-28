@@ -9,7 +9,7 @@ if (root) {
   ReactDOM.createRoot(root).render(
     <React.StrictMode>
       <Website />
-    </React.StrictMode>
+    </React.StrictMode>,
   );
 } else {
   console.log(`Root element not found.`);
