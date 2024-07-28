@@ -1,17 +1,6 @@
 export default function Card() {
   return (
     <>
-      <div className='grid gap-8 text-center'>
-        <h2>All-in-One HR Efficient System for All Your HR Needs</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id,
-          quia perferendis quibusdam sapiente beatae dolorem expedita a
-          voluptate eveniet nesciunt soluta assumenda maxime quod exercitationem
-          similique, laudantium nobis ullam?
-        </p>
-      </div>
-
       <div className='grid grid-cols-2 items-center gap-16 rounded-2xl border-2 border-gray-600 bg-gradient-to-br from-gray-700/20 to-gray-700/30 p-16'>
         <div className='grid content-start justify-items-start gap-8'>
           <p className='text-2xl font-bold'>
