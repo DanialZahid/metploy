@@ -3,7 +3,7 @@ import { Footer } from './Components/Footer/Footer';
 import { Hero } from './Components/Hero';
 import { Clients } from './Components/Clients';
 
-function Website() {
+export function Website() {
   return (
     <>
       <Header />
@@ -17,5 +17,3 @@ function Website() {
     </>
   );
 }
-
-export default Website;
