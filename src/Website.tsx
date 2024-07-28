@@ -1,10 +1,6 @@
 import { Header } from './Header/Header';
 import { Footer } from './Footer/Footer';
-
-interface SectionProps {
-  children: React.ReactNode;
-  className?: string;
-}
+import { Section } from './HTMLElements/Section';
 
 function Main() {
   return (
@@ -18,14 +14,6 @@ function Main() {
         </p>
       </Section>
     </main>
-  );
-}
-
-function Section({ children, className }: SectionProps) {
-  return (
-    <section className={`m-auto max-w-screen-xl ${className ?? ''}`.trim()}>
-      {children}
-    </section>
   );
 }
 
