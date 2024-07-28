@@ -3,7 +3,7 @@ import { Footer } from './Components/Footer/Footer';
 import { Hero } from './Components/Hero';
 import { Clients } from './Components/Clients';
 
-export function Website() {
+export default function Website() {
   return (
     <>
       <Header />
