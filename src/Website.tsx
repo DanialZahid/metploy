@@ -1,27 +1,18 @@
-import { Header } from './Header/Header';
-import { Footer } from './Footer/Footer';
-import { Section } from './HTMLElements/Section';
-
-function Main() {
-  return (
-    <main>
-      <Section>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
-          reprehenderit natus id fugit, ducimus sint iure qui quas totam veniam
-          voluptatum, voluptatem dignissimos odit vitae cumque autem,
-          exercitationem facilis delectus.
-        </p>
-      </Section>
-    </main>
-  );
-}
+import { Header } from './Components/Header/Header';
+import { Footer } from './Components/Footer/Footer';
+import { Hero } from './Components/Hero';
+import { Clients } from './Components/Clients';
 
 function Website() {
   return (
     <>
       <Header />
-      <Main />
+
+      <main>
+        <Hero />
+        <Clients />
+      </main>
+
       <Footer />
     </>
   );
