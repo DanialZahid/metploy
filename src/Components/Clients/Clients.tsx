@@ -7,7 +7,7 @@ import { ClientLogo5 } from './ClientLogo5';
 export default function Clients() {
   return (
     <section className='grid gap-16' id='clients'>
-      <h2 className='text-center'>Trusted and Loved by the Teams at</h2>
+      <h2 className='text-center'>Trusted and Loved by the Teams At</h2>
 
       <div className='flex flex-wrap items-center justify-center gap-16 text-gray-400'>
         {ClientLogo1}
