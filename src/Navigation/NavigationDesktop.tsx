@@ -3,11 +3,11 @@ interface Item {
   link: string;
 }
 
-interface NavDesktopProps {
+interface NavigationDesktopProps {
   items: Item[];
 }
 
-export function NavDesktop({ items }: NavDesktopProps) {
+export function NavigationDesktop({ items }: NavigationDesktopProps) {
   const item = items.map((item) => (
     <li key={item.name}>
       <a
