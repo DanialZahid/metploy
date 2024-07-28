@@ -10,8 +10,8 @@ const navItems = [
   },
 
   {
-    name: 'Product',
-    link: '/#product',
+    name: 'About Us',
+    link: '/#about-us',
   },
 
   {
