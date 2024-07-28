@@ -25,7 +25,7 @@ const navItems = [
   },
 ];
 
-export function NavigationDesktop() {
+export default function NavigationDesktop() {
   const item = navItems.map((item) => (
     <li key={item.name}>
       <a

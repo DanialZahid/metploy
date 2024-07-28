@@ -1,7 +1,7 @@
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export function Hero() {
+export default function Hero() {
   return (
     <section className='grid gap-16' id='hero'>
       <div className='grid gap-8'>

@@ -10,7 +10,7 @@ const buttons = [
   },
 ];
 
-export function NavigationButtons() {
+export default function NavigationButtons() {
   const cta = buttons.map((item) => (
     <button
       key={item.name}
