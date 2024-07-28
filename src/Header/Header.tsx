@@ -1,6 +1,6 @@
 import { Logo } from './Logo';
-import { NavCta } from './NavCta';
-import { NavDesktop } from './NavDesktop';
+import { NavCTA } from '../Navigation/NavigationCTA';
+import { NavigationDesktop } from '../Navigation/NavigationDesktop';
 
 const navItems = [
   {
@@ -43,12 +43,12 @@ const navCtas = [
 
 export function Header() {
   return (
-    <header className='m-auto max-w-screen-xl flex items-center justify-between gap-4 p-4'>
+    <header className='flex items-center justify-between gap-4'>
       <Logo />
 
-      <NavDesktop items={navItems} />
+      <NavigationDesktop items={navItems} />
 
-      <NavCta items={navCtas} />
+      <NavCTA items={navCtas} />
     </header>
   );
 }
