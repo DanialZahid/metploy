@@ -1,7 +1,7 @@
 export default function Logo() {
   return (
     <a
-      href=''
+      href='/#hero'
       className='flex items-center gap-4 justify-self-start text-blue-100'
       title='Metploy'
     >
