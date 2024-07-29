@@ -1,5 +1,5 @@
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ButtonBlue, ButtonTransparentIcon } from './Buttons';
 
 export default function Hero() {
   return (
@@ -19,12 +19,8 @@ export default function Hero() {
         </p>
 
         <div className='flex flex-wrap items-center justify-center gap-2'>
-          <button>Get Started for Free</button>
-
-          <button className='flex items-center gap-3 bg-transparent hover:bg-white/20'>
-            <FontAwesomeIcon icon={faPlayCircle} size='lg' />
-            See Video
-          </button>
+          <ButtonBlue content='Get Started for Free' />
+          <ButtonTransparentIcon content='See Video' icon={faPlayCircle} />
         </div>
       </div>
 

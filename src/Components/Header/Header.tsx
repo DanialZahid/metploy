@@ -1,4 +1,5 @@
-import NavigationButtons from '../Navigation/NavigationButtons';
+import { ButtonBlue, ButtonTransparent } from '../Buttons';
+
 import NavigationDesktop from '../Navigation/NavigationDesktop';
 import Logo from './Logo';
 
@@ -9,7 +10,10 @@ export default function Header() {
 
       <NavigationDesktop />
 
-      <NavigationButtons />
+      <div className='flex gap-2 justify-self-end'>
+        <ButtonTransparent content='Sign Up' />
+        <ButtonBlue content='Log In' />
+      </div>
     </header>
   );
 }

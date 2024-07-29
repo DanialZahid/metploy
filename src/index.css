@@ -23,10 +23,6 @@
       url('/assets/fonts/inter-v13-latin-700.ttf') format('truetype');
   }
 
-  button {
-    @apply rounded-full bg-blue-600 px-10 py-3 transition-all hover:bg-blue-700;
-  }
-
   section {
     @apply m-auto max-w-7xl px-4 py-16;
   }
