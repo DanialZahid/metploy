@@ -1,10 +1,11 @@
+import { TextBlock } from '../General';
 import Card from './Card';
 import Values from './Values';
 
 export default function AboutUs() {
   return (
     <section className='grid gap-20' id='about-us'>
-      <div className='grid gap-10 text-center'>
+      <TextBlock className='text-center'>
         <h2>All-in-One HR Efficient System for All Your HR Needs</h2>
 
         <p>
@@ -13,7 +14,7 @@ export default function AboutUs() {
           voluptate eveniet nesciunt soluta assumenda maxime quod exercitationem
           similique, laudantium nobis ullam?
         </p>
-      </div>
+      </TextBlock>
 
       <Card />
       <Values />
