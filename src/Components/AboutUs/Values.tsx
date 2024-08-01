@@ -30,7 +30,10 @@ const values = [
 
 export default function Values() {
   const value = values.map((item) => (
-    <div key={item.title} className='grid gap-6'>
+    <div
+      key={item.title}
+      className='grid gap-6 rounded-2xl border-2 border-slate-400/20 p-16 transition-colors hover:bg-slate-400/10'
+    >
       <span className='text-blue-600'>{item.icon}</span>
 
       <h3 className='text-2xl font-bold'>{item.title}</h3>
@@ -38,5 +41,9 @@ export default function Values() {
     </div>
   ));
 
-  return <div className='grid grid-cols-3 gap-16'>{value}</div>;
+  return (
+    <div className='grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-8'>
+      {value}
+    </div>
+  );
 }
