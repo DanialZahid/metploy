@@ -5,12 +5,12 @@ interface ButtonCommonProps {
   content: string;
 }
 
-interface ButtonTransparentIconProps extends ButtonCommonProps {
+interface ButtonIconProps extends ButtonCommonProps {
   icon: IconDefinition;
 }
 
 const baseClasses = `rounded-full px-10 py-3 transition-all`;
-const btnTransparentClasses = `bg-transparent hover:bg-white/20`;
+const btnIconClasses = `bg-transparent hover:bg-white/20`;
 
 export function ButtonBlue({ content }: ButtonCommonProps) {
   return (
@@ -25,23 +25,17 @@ export function ButtonBlue({ content }: ButtonCommonProps) {
 
 export function ButtonTransparent({ content }: ButtonCommonProps) {
   return (
-    <button
-      title={content}
-      className={`${baseClasses} ${btnTransparentClasses}`}
-    >
+    <button title={content} className={`${baseClasses} ${btnIconClasses}`}>
       {content}
     </button>
   );
 }
 
-export function ButtonTransparentIcon({
-  content,
-  icon,
-}: ButtonTransparentIconProps) {
+export function ButtonIcon({ content, icon }: ButtonIconProps) {
   return (
     <button
       title={content}
-      className={`${baseClasses} ${btnTransparentClasses} flex items-center gap-3`}
+      className={`${baseClasses} ${btnIconClasses} flex items-center gap-3`}
     >
       <FontAwesomeIcon icon={icon} size='lg' />
       {content}

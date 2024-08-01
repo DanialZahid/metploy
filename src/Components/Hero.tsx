@@ -1,5 +1,5 @@
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-import { ButtonBlue, ButtonTransparentIcon } from './Buttons';
+import { ButtonBlue, ButtonIcon } from './Buttons';
 
 export default function Hero() {
   return (
@@ -20,7 +20,7 @@ export default function Hero() {
 
         <div className='flex flex-wrap items-center justify-center gap-2'>
           <ButtonBlue content='Get Started for Free' />
-          <ButtonTransparentIcon content='See Video' icon={faPlayCircle} />
+          <ButtonIcon content='See Video' icon={faPlayCircle} />
         </div>
       </div>
 
