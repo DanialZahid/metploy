@@ -3,6 +3,7 @@ import Footer from './Components/Footer/Footer';
 import Hero from './Components/Hero';
 import Clients from './Components/Clients/Clients';
 import AboutUs from './Components/AboutUs/AboutUs';
+import Company from './Components/Company/Company';
 
 export default function Website() {
   return (
@@ -13,6 +14,7 @@ export default function Website() {
         <Hero />
         <Clients />
         <AboutUs />
+        <Company />
       </main>
 
       <Footer />
