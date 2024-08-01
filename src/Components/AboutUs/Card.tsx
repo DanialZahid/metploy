@@ -1,3 +1,5 @@
+import { ButtonBlue } from '../Buttons';
+
 export default function Card() {
   return (
     <>
