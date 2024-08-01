@@ -16,7 +16,7 @@ export default function Card() {
             laboriosam eligendi eaque maxime ab.
           </p>
 
-          <button>Level Up Your HR Management</button>
+          <ButtonBlue content='Level Up Your HR Management' />
         </div>
 
         <img
