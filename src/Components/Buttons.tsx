@@ -16,6 +16,7 @@ export function ButtonBlue({ content }: ButtonCommonProps) {
   return (
     <button
       title={content}
+      type='button'
       className={`${baseClasses} bg-blue-600 hover:bg-blue-700`}
     >
       {content}
@@ -35,6 +36,7 @@ export function ButtonIcon({ content, icon }: ButtonIconProps) {
   return (
     <button
       title={content}
+      type='button'
       className={`${baseClasses} ${btnIconClasses} flex items-center gap-3`}
     >
       <FontAwesomeIcon icon={icon} size='lg' />
