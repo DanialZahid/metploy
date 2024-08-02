@@ -1,10 +1,10 @@
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-import { ButtonBlue, ButtonIcon } from './Buttons';
-import { TextBlock } from './General';
+import { ButtonBlue, ButtonIcon } from '../Buttons';
+import { TextBlock } from '../General';
 
 export default function Hero() {
   return (
-    <section className='grid gap-16 text-center' id='hero'>
+    <section className='grid gap-24 text-center' id='hero'>
       <TextBlock>
         <h1 className='text-6xl font-bold'>
           Increase Productivity with
