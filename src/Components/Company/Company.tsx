@@ -14,9 +14,9 @@ export default function Company() {
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          similique reprehenderit quod minima unde molestiae, quia porro tempore
-          illum a aut ratione nam aperiam dicta cupiditate voluptate quaerat, ea
-          vel.
+          similique reprehenderit quod minima unde
+          <br /> molestiae, quia porro tempore illum a aut ratione nam aperiam
+          dicta cupiditate voluptate quaerat, ea vel.
         </p>
       </TextBlock>
 

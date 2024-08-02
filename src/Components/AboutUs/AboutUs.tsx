@@ -10,9 +10,9 @@ export default function AboutUs() {
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id,
-          quia perferendis quibusdam sapiente beatae dolorem expedita a
-          voluptate eveniet nesciunt soluta assumenda maxime quod exercitationem
-          similique, laudantium nobis ullam?
+          quia perferendis quibusdam sapiente beatae dolorem <br />
+          expedita a voluptate eveniet nesciunt soluta assumenda maxime quod
+          exercitationem similique, laudantium nobis ullam?
         </p>
       </TextBlock>
 
