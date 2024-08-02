@@ -3,7 +3,7 @@ import { TextBlock } from '../General';
 
 export default function CTA() {
   return (
-    <section>
+    <section id='contact-us'>
       <TextBlock className='justify-items-center rounded-xl border-2 border-slate-800/40 bg-gradient-to-tr from-slate-800/20 to-slate-800/40 p-12 text-center'>
         <h2>
           Let&apos;s Join and Embark on
@@ -18,7 +18,7 @@ export default function CTA() {
           repellendus numquam
         </p>
 
-        <ButtonBlue content='Sign Up for Free' />
+        <ButtonBlue content='Get Started for Free' />
       </TextBlock>
     </section>
   );
