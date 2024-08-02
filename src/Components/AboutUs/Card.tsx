@@ -5,11 +5,11 @@ export default function Card() {
     <>
       <div className='grid grid-cols-2 items-center gap-16 rounded-2xl border-2 border-gray-800/40 bg-gradient-to-br from-gray-800/30 to-gray-800/40 p-16'>
         <div className='grid content-start justify-items-start gap-8'>
-          <p className='text-2xl font-bold'>
+          <h3>
             Elevate Workplace Satisfaction and
             <br />
             Performance with Metploy Management
-          </p>
+          </h3>
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.

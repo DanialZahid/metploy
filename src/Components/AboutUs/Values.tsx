@@ -36,7 +36,7 @@ export default function Values() {
     >
       <span className='text-blue-600'>{item.icon}</span>
 
-      <h3 className='text-2xl font-bold'>{item.title}</h3>
+      <h3>{item.title}</h3>
       <p>{item.description}</p>
     </div>
   ));

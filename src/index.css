@@ -28,8 +28,13 @@
   }
 
   /* Typography */
-  h2 {
+  h2,
+  h3 {
     @apply text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl;
   }
 
   p {
