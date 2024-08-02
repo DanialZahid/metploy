@@ -20,6 +20,11 @@ const navItems = [
   },
 
   {
+    name: 'FAQs',
+    link: '/#faqs',
+  },
+
+  {
     name: 'Contact Us',
     link: '/#contact-us',
   },
