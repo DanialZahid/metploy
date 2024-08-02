@@ -5,6 +5,7 @@ import Clients from './Components/Clients/Clients';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Company from './Components/Company/Company';
 import FAQs from './Components/FAQs/FAQs';
+import CTA from './Components/CTA/CTA';
 
 export default function Website() {
   return (
@@ -17,6 +18,7 @@ export default function Website() {
         <AboutUs />
         <Company />
         <FAQs />
+        <CTA />
       </main>
 
       <Footer />
