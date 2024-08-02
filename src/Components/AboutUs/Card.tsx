@@ -3,7 +3,7 @@ import { ButtonBlue } from '../Buttons';
 export default function Card() {
   return (
     <>
-      <div className='grid grid-cols-2 items-center gap-16 rounded-2xl border-2 border-gray-600 bg-gradient-to-br from-gray-700/20 to-gray-700/30 p-16'>
+      <div className='grid grid-cols-2 items-center gap-16 rounded-2xl border-2 border-gray-800/40 bg-gradient-to-br from-gray-800/30 to-gray-800/40 p-16'>
         <div className='grid content-start justify-items-start gap-8'>
           <p className='text-2xl font-bold'>
             Elevate Workplace Satisfaction and
