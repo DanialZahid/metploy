@@ -4,32 +4,34 @@ import { TextBlock } from '../General';
 
 export default function Company() {
   return (
-    <section className='grid gap-20' id='company'>
-      <TextBlock className='text-center'>
-        <h2>
-          Manage an Efficient Schedule System
-          <br />
-          for All Your People and Your Company
-        </h2>
+    <section className='grid gap-28' id='company'>
+      <div className='grid gap-24'>
+        <TextBlock className='text-center'>
+          <h2>
+            Manage an Efficient Schedule System
+            <br />
+            for All Your People and Your Company
+          </h2>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          similique reprehenderit quod minima unde
-          <br /> molestiae, quia porro tempore illum a aut ratione nam aperiam
-          dicta cupiditate voluptate quaerat, ea vel.
-        </p>
-      </TextBlock>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            similique reprehenderit quod minima unde
+            <br /> molestiae, quia porro tempore illum a aut ratione nam aperiam
+            dicta cupiditate voluptate quaerat, ea vel.
+          </p>
+        </TextBlock>
 
-      <iframe
-        className='rounded-xl shadow-2xl shadow-blue-600/40'
-        width='100%'
-        height='500'
-        src='https://www.youtube-nocookie.com/embed/LXb3EKWsInQ'
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-        referrerPolicy='strict-origin-when-cross-origin'
-        title='YouTube Video'
-        allowFullScreen
-      ></iframe>
+        <iframe
+          className='rounded-xl shadow-2xl shadow-blue-600/40'
+          width='100%'
+          height='500'
+          src='https://www.youtube-nocookie.com/embed/LXb3EKWsInQ'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerPolicy='strict-origin-when-cross-origin'
+          title='YouTube Video'
+          allowFullScreen
+        ></iframe>
+      </div>
 
       <section className='grid grid-cols-2 gap-8 p-0'>
         <div className='flex flex-col justify-between gap-16'>

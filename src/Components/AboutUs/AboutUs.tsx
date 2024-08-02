@@ -4,7 +4,7 @@ import Values from './Values';
 
 export default function AboutUs() {
   return (
-    <section className='grid gap-20' id='about-us'>
+    <section className='grid gap-24' id='about-us'>
       <TextBlock className='text-center'>
         <h2>All-in-One HR Efficient System for All Your HR Needs</h2>
 
