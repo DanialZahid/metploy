@@ -4,6 +4,8 @@ import { CommonLinks } from '../Navigation/CommonLinks';
 import NavigationDesktop from '../Navigation/NavigationDesktop';
 import { NavigationFooterItems } from '../Navigation/ProductLinks';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { motion } from 'framer-motion';
+import { MotionLink } from '../General';
 
 export default function Footer() {
   return (
@@ -39,24 +41,23 @@ export default function Footer() {
         <div className='m-auto flex max-w-screen-xl justify-between p-4'>
           <span>
             &copy; {new Date().getFullYear()}{' '}
-            <a
-              href='https://github.com/DanialZahid'
+            <MotionLink
+              to='https://github.com/DanialZahid'
+              text='Danial Zahid'
               title='Danial Zahid on GitHub'
-              className='decoration-blue-500 hover:underline hover:underline-offset-8'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Danial Zahid
-            </a>
+              isExternal
+            />
           </span>
-          <a
+
+          <motion.a
             href='https://github.com/DanialZahid/metploy'
             title='Metploy on GitHub'
+            whileHover={{ scale: 1.25 }}
             target='_blank'
             rel='noreferrer'
           >
             <FontAwesomeIcon icon={faGithub} size='xl' />
-          </a>
+          </motion.a>
         </div>
       </div>
     </footer>

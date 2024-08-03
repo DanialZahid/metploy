@@ -1,3 +1,5 @@
+import { MotionLink } from '../General';
+
 interface NavigationLinksProps {
   name: string;
   link: string;
@@ -14,13 +16,7 @@ export default function NavigationDesktop({
 }: NavigationDesktopProps) {
   const item = links.map((item) => (
     <li key={item.name}>
-      <a
-        href={item.link}
-        title={item.name}
-        className='decoration-blue-500 hover:underline hover:underline-offset-8'
-      >
-        {item.name}
-      </a>
+      <MotionLink to={item.link} text={item.name} />
     </li>
   ));
 

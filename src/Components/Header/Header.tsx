@@ -13,8 +13,8 @@ export default function Header() {
         <NavigationDesktop links={CommonLinks} section='header' />
 
         <div className='flex gap-2 justify-self-end'>
-          <ButtonTransparent content='Sign Up' />
-          <ButtonBlue content='Log In' />
+          <ButtonTransparent content='Log In' />
+          <ButtonBlue content='Sign Up' />
         </div>
       </div>
     </header>
