@@ -1,8 +1,20 @@
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { ButtonBlue, ButtonIcon } from '../Buttons';
-import { TextBlock } from '../General';
+import { PlaceholderVideo, TextBlock } from '../General';
+import Modal from '../Modal/Modal';
+import { useState } from 'react';
 
 export default function Hero() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalTitle, setModalTitle] = useState('');
+  const [modalChildren, setModalChildren] = useState<React.ReactNode>(null);
+
+  function handleClick() {
+    setModalTitle('Watch Our HR Management Platform Tour');
+    setModalChildren(<PlaceholderVideo />);
+    setShowModal(true);
+  }
+
   return (
     <section className='grid gap-24 text-center' id='hero'>
       <TextBlock>
@@ -21,7 +33,20 @@ export default function Hero() {
 
         <div className='flex flex-wrap items-center justify-center gap-2'>
           <ButtonBlue content='Get Started for Free' />
-          <ButtonIcon content='See Video' icon={faPlayCircle} />
+
+          <ButtonIcon
+            content='See Video'
+            icon={faPlayCircle}
+            onClick={handleClick}
+          />
+
+          <Modal
+            title={modalTitle}
+            showModal={showModal}
+            setShowModal={setShowModal}
+          >
+            {modalChildren}
+          </Modal>
         </div>
       </TextBlock>
 
