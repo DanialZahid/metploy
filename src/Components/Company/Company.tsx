@@ -1,6 +1,6 @@
 import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { TextBlock } from '../General';
+import { PlaceholderVideo, TextBlock } from '../General';
 
 export default function Company() {
   return (
@@ -21,16 +21,7 @@ export default function Company() {
           </p>
         </TextBlock>
 
-        <iframe
-          className='rounded-xl shadow-2xl shadow-blue-600/40'
-          width='100%'
-          height='500'
-          src='https://www.youtube-nocookie.com/embed/LXb3EKWsInQ'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          referrerPolicy='strict-origin-when-cross-origin'
-          title='YouTube Video'
-          allowFullScreen
-        ></iframe>
+        <PlaceholderVideo />
       </div>
 
       <section className='grid grid-cols-2 gap-8 p-0'>
