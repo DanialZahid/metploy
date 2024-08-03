@@ -1,8 +1,18 @@
 import { TextBlock } from '../General';
+import { FAQsList } from './FAQsList';
+import FAQItem from './FAQItem';
 
 export default function FAQs() {
+  const faq = FAQsList.map((item) => (
+    <FAQItem
+      key={item.id}
+      question={item.question}
+      answer={item.answer}
+    ></FAQItem>
+  ));
+
   return (
-    <section id='faqs'>
+    <section className='grid gap-24' id='faqs'>
       <TextBlock className='text-center'>
         <h2>Frequently Asked Questions</h2>
 
@@ -13,6 +23,8 @@ export default function FAQs() {
           ad, quia est dolore corporis unde tempora!
         </p>
       </TextBlock>
+
+      <div>{faq}</div>
     </section>
   );
 }
