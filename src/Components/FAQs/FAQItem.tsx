@@ -11,7 +11,7 @@ interface FAQItemProps {
 export default function FAQItem({ question, answer }: FAQItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const animateVariants = {
+  const toggleVariants = {
     open: {
       opacity: 1,
       height: 'auto',
@@ -48,7 +48,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
 
       <motion.p
         initial={'closed'}
-        variants={animateVariants}
+        variants={toggleVariants}
         animate={isOpen ? 'open' : 'closed'}
       >
         {answer}
