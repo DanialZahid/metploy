@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface ButtonCommonProps {
   content: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 interface ButtonIconProps extends ButtonCommonProps {
@@ -12,9 +13,10 @@ interface ButtonIconProps extends ButtonCommonProps {
 const baseClasses = `rounded-full px-10 py-3 transition-all font-medium`;
 const btnIconClasses = `bg-transparent hover:bg-white/20`;
 
-export function ButtonBlue({ content }: ButtonCommonProps) {
+export function ButtonBlue({ content, onClick }: ButtonCommonProps) {
   return (
     <button
+      onClick={onClick}
       title={content}
       type='button'
       className={`${baseClasses} bg-blue-600 hover:bg-blue-700`}
@@ -24,17 +26,22 @@ export function ButtonBlue({ content }: ButtonCommonProps) {
   );
 }
 
-export function ButtonTransparent({ content }: ButtonCommonProps) {
+export function ButtonTransparent({ content, onClick }: ButtonCommonProps) {
   return (
-    <button title={content} className={`${baseClasses} ${btnIconClasses}`}>
+    <button
+      onClick={onClick}
+      title={content}
+      className={`${baseClasses} ${btnIconClasses}`}
+    >
       {content}
     </button>
   );
 }
 
-export function ButtonIcon({ content, icon }: ButtonIconProps) {
+export function ButtonIcon({ content, icon, onClick }: ButtonIconProps) {
   return (
     <button
+      onClick={onClick}
       title={content}
       type='button'
       className={`${baseClasses} ${btnIconClasses} flex items-center gap-3`}
