@@ -51,7 +51,7 @@ export default function Modal({
             className='grid max-w-[95vw] content-start gap-8 overflow-auto rounded-2xl border-2 border-neutral-900 bg-neutral-950 p-8 shadow-lg xl:max-h-[95vh] xl:w-[900px]'
           >
             <div className='flex items-center justify-between gap-8'>
-              <h2>{title}</h2>
+              <h2 className='text-2xl'>{title}</h2>
 
               <span className='grid'>
                 <FontAwesomeIcon
