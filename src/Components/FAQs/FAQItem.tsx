@@ -19,7 +19,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
       onClick={handleClick}
       className='cursor-pointer border-b-2 border-neutral-800 py-8 first-of-type:pt-0'
     >
-      <div className='flex justify-between gap-4'>
+      <div className='flex items-center justify-between gap-4'>
         <h3 className='text-lg'>{question}</h3>
 
         <FontAwesomeIcon
