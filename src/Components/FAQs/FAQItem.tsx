@@ -1,6 +1,7 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface FAQItemProps {
   question: string;
@@ -9,6 +10,21 @@ interface FAQItemProps {
 
 export default function FAQItem({ question, answer }: FAQItemProps) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const animateVariants = {
+    open: {
+      opacity: 1,
+      height: 'auto',
+      visibility: 'visible' as const,
+      marginTop: '2rem',
+    },
+
+    closed: {
+      opacity: 0,
+      height: 0,
+      visibility: 'hidden' as const,
+    },
+  };
 
   function handleClick() {
     setIsOpen(!isOpen);
@@ -30,15 +46,13 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
         />
       </div>
 
-      <p
-        className={`transition-all ${
-          isOpen
-            ? 'opacity-1 visible max-h-96 pt-8'
-            : 'hidden max-h-0 opacity-0'
-        } `.trim()}
+      <motion.p
+        initial={'closed'}
+        variants={animateVariants}
+        animate={isOpen ? 'open' : 'closed'}
       >
         {answer}
-      </p>
+      </motion.p>
     </div>
   );
 }
