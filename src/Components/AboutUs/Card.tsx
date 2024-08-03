@@ -1,9 +1,26 @@
+import { motion } from 'framer-motion';
 import { ButtonBlue } from '../Buttons';
 
 export default function Card() {
+  const gradientVariants = {
+    initial: {
+      background:
+        'linear-gradient(to bottom right, rgba(31, 41, 55, 0.4), rgba(31, 41, 55, 0.3))',
+    },
+    hover: {
+      background:
+        'linear-gradient(to bottom right, rgba(31, 41, 55, 0.6), rgba(31, 41, 55, 0.5))',
+    },
+  };
+
   return (
     <>
-      <div className='grid grid-cols-2 items-center gap-16 rounded-2xl border-2 border-gray-800/40 bg-gradient-to-br from-gray-800/30 to-gray-800/40 p-16'>
+      <motion.div
+        variants={gradientVariants}
+        whileHover='hover'
+        initial='initial'
+        className='grid grid-cols-2 items-center gap-16 rounded-2xl border-2 border-gray-800/40 p-16'
+      >
         <div className='grid content-start justify-items-start gap-8'>
           <h3>
             Elevate Workplace Satisfaction and
@@ -29,7 +46,7 @@ export default function Card() {
           loading='lazy'
           decoding='async'
         />
-      </div>
+      </motion.div>
     </>
   );
 }
