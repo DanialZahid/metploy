@@ -29,7 +29,7 @@ export default function NavigationDesktop({
       <ul
         className={
           section === 'header'
-            ? 'flex items-center gap-10 font-semibold'
+            ? 'flex items-center gap-10 font-medium'
             : 'grid gap-5 text-sm'.trim()
         }
       >

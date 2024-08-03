@@ -9,7 +9,7 @@ interface ButtonIconProps extends ButtonCommonProps {
   icon: IconDefinition;
 }
 
-const baseClasses = `rounded-full px-10 py-3 transition-all`;
+const baseClasses = `rounded-full px-10 py-3 transition-all font-medium`;
 const btnIconClasses = `bg-transparent hover:bg-white/20`;
 
 export function ButtonBlue({ content }: ButtonCommonProps) {
