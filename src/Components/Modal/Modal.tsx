@@ -48,19 +48,21 @@ export default function Modal({
             animate={{ scale: 1 }}
             exit={{ scale: 0.95 }}
             transition={{ duration: 0.3, type: 'spring' }}
-            className='grid content-start gap-8 overflow-auto rounded-2xl border-2 border-neutral-900 bg-neutral-950 p-8 shadow-lg lg:max-h-screen lg:w-[900px]'
+            className='grid max-w-[95vw] content-start gap-8 overflow-auto rounded-2xl border-2 border-neutral-900 bg-neutral-950 p-8 shadow-lg xl:max-h-[95vh] xl:w-[900px]'
           >
             <div className='flex items-center justify-between gap-8'>
               <h2>{title}</h2>
 
-              <FontAwesomeIcon
-                icon={faXmark}
-                className='h-5 w-5 cursor-pointer rounded-full border-2 border-neutral-800 bg-neutral-900 p-2 transition-colors hover:border-red-800 hover:bg-red-800'
-                onClick={() => {
-                  setShowModal(false);
-                }}
-                title='Close Modal'
-              />
+              <span className='grid'>
+                <FontAwesomeIcon
+                  icon={faXmark}
+                  className='h-5 w-5 cursor-pointer rounded-full border-2 border-neutral-800 bg-neutral-900 p-2 transition-colors hover:border-red-800 hover:bg-red-800'
+                  onClick={() => {
+                    setShowModal(false);
+                  }}
+                  title='Close Modal'
+                />
+              </span>
             </div>
 
             {children}
