@@ -1,7 +1,20 @@
+import { useState } from 'react';
 import { ButtonBlue } from '../Buttons';
 import { TextBlock } from '../General';
+import Modal from '../Modal/Modal';
+import SignUpForm from '../Forms/SignUpForm';
 
 export default function CTA() {
+  const [showModal, setShowModal] = useState(false);
+  const [modalTitle, setModalTitle] = useState('');
+  const [modalChildren, setModalChildren] = useState<React.ReactNode>(null);
+
+  function handleClick() {
+    setModalTitle('Sign Up to Get Started');
+    setModalChildren(<SignUpForm />);
+    setShowModal(true);
+  }
+
   return (
     <section id='contact-us'>
       <TextBlock className='justify-items-center rounded-xl border-2 border-slate-800/40 bg-gradient-to-tr from-slate-800/20 to-slate-800/40 p-12 text-center'>
@@ -18,7 +31,15 @@ export default function CTA() {
           repellendus numquam
         </p>
 
-        <ButtonBlue>Get Started for Free</ButtonBlue>
+        <ButtonBlue onClick={handleClick}>Get Started for Free</ButtonBlue>
+
+        <Modal
+          title={modalTitle}
+          showModal={showModal}
+          setShowModal={setShowModal}
+        >
+          {modalChildren}
+        </Modal>
       </TextBlock>
     </section>
   );

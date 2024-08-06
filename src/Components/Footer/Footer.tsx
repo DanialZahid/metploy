@@ -6,23 +6,29 @@ import { NavigationFooterItems } from '../Navigation/ProductLinks';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion';
 import { MotionLink } from '../General';
-import Newsletter from './Newsletter';
+import NewsletterForm from '../Forms/NewsletterForm';
 
 export default function Footer() {
   return (
     <footer className='border-t-2 border-neutral-900 bg-neutral-950'>
       <div className='m-auto grid max-w-screen-xl grid-cols-2 items-start gap-16 px-4 py-12'>
-        <div className='grid gap-8'>
-          <Logo />
+        <div className='grid gap-12'>
+          <div className='grid gap-8'>
+            <Logo />
 
-          <p className='text-sm'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-            voluptates cum itaque, debitis nisi eius at architecto delectus
-            commodi hic voluptatibus in neque aperiam pariatur fuga accusamus
-            reiciendis! Nobis, eius.
-          </p>
+            <p className='text-sm'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+              voluptates cum itaque, debitis nisi eius at architecto delectus
+              commodi hic voluptatibus in neque aperiam pariatur fuga accusamus
+              reiciendis! Nobis, eius.
+            </p>
+          </div>
 
-          <Newsletter />
+          <div className='grid gap-4'>
+            <h2 className='text-base'>Subscribe to the Newsletter</h2>
+
+            <NewsletterForm />
+          </div>
         </div>
 
         <div className='grid grid-cols-2 gap-8'>

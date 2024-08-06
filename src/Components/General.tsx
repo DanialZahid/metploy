@@ -16,6 +16,26 @@ interface PlaceholderVideoProps {
   hasShadow: boolean;
 }
 
+interface InputProps {
+  type?:
+    | 'text'
+    | 'email'
+    | 'password'
+    | 'number'
+    | 'tel'
+    | 'url'
+    | 'search'
+    | 'date'
+    | 'datetime-local'
+    | 'month'
+    | 'week'
+    | 'time'
+    | 'color';
+  placeholder?: string;
+  isTextArea?: boolean;
+  isRequired?: boolean;
+}
+
 export function TextBlock({ children, className }: TextBlockProps) {
   return (
     <div className={`grid gap-10 ${className ?? ''}`.trim()}>{children}</div>
@@ -56,5 +76,31 @@ export function PlaceholderVideo({ hasShadow }: PlaceholderVideoProps) {
       title='YouTube Video'
       allowFullScreen
     ></iframe>
+  );
+}
+
+export function Input({
+  type,
+  placeholder,
+  isTextArea = false,
+  isRequired = true,
+}: InputProps) {
+  const commonProps = {
+    name: type,
+    autoComplete: type,
+    placeholder: placeholder,
+    required: isRequired,
+    className:
+      'grid rounded-lg bg-neutral-800 px-5 py-3 outline-none ring-blue-600 placeholder:text-sm placeholder:text-gray-200 focus:ring-1 w-full',
+  };
+
+  return (
+    <label>
+      {isTextArea ? (
+        <textarea {...commonProps} />
+      ) : (
+        <input type={type} {...commonProps} />
+      )}
+    </label>
   );
 }
