@@ -2,7 +2,8 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface ButtonCommonProps {
-  content: string;
+  children: React.ReactNode;
+  className?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
@@ -13,41 +14,51 @@ interface ButtonIconProps extends ButtonCommonProps {
 const baseClasses = `rounded-full px-10 py-3 transition-all font-medium`;
 const btnIconClasses = `bg-transparent hover:bg-white/20`;
 
-export function ButtonBlue({ content, onClick }: ButtonCommonProps) {
+export function ButtonBlue({
+  children,
+  className,
+  onClick,
+}: ButtonCommonProps) {
   return (
     <button
       onClick={onClick}
-      title={content}
       type='button'
-      className={`${baseClasses} bg-blue-600 hover:bg-blue-700`}
+      className={`${baseClasses} bg-blue-600 hover:bg-blue-700 ${className ? className : ''}`.trim()}
     >
-      {content}
+      {children}
     </button>
   );
 }
 
-export function ButtonTransparent({ content, onClick }: ButtonCommonProps) {
+export function ButtonTransparent({
+  children,
+  className,
+  onClick,
+}: ButtonCommonProps) {
   return (
     <button
       onClick={onClick}
-      title={content}
-      className={`${baseClasses} ${btnIconClasses}`}
+      className={`${baseClasses} ${btnIconClasses} ${className ? className : ''}`.trim()}
     >
-      {content}
+      {children}
     </button>
   );
 }
 
-export function ButtonIcon({ content, icon, onClick }: ButtonIconProps) {
+export function ButtonIcon({
+  children,
+  icon,
+  className,
+  onClick,
+}: ButtonIconProps) {
   return (
     <button
       onClick={onClick}
-      title={content}
       type='button'
-      className={`${baseClasses} ${btnIconClasses} flex items-center gap-3`}
+      className={`${baseClasses} ${btnIconClasses} flex items-center gap-3 ${className ? className : ''}`.trim()}
     >
       <FontAwesomeIcon icon={icon} size='lg' />
-      {content}
+      {children}
     </button>
   );
 }

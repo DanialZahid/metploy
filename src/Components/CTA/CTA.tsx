@@ -18,7 +18,7 @@ export default function CTA() {
           repellendus numquam
         </p>
 
-        <ButtonBlue content='Get Started for Free' />
+        <ButtonBlue>Get Started for Free</ButtonBlue>
       </TextBlock>
     </section>
   );

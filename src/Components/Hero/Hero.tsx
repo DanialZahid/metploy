@@ -32,13 +32,11 @@ export default function Hero() {
         </p>
 
         <div className='flex flex-wrap items-center justify-center gap-2'>
-          <ButtonBlue content='Get Started for Free' />
+          <ButtonBlue>Get Started for Free</ButtonBlue>
 
-          <ButtonIcon
-            content='See Video'
-            icon={faPlayCircle}
-            onClick={handleClick}
-          />
+          <ButtonIcon icon={faPlayCircle} onClick={handleClick}>
+            See Video
+          </ButtonIcon>
 
           <Modal
             title={modalTitle}
