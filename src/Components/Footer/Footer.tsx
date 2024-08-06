@@ -6,6 +6,7 @@ import { NavigationFooterItems } from '../Navigation/ProductLinks';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion';
 import { MotionLink } from '../General';
+import Newsletter from './Newsletter';
 
 export default function Footer() {
   return (
@@ -20,6 +21,8 @@ export default function Footer() {
             commodi hic voluptatibus in neque aperiam pariatur fuga accusamus
             reiciendis! Nobis, eius.
           </p>
+
+          <Newsletter />
         </div>
 
         <div className='grid grid-cols-2 gap-8'>
