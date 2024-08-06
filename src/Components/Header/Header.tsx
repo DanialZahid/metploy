@@ -6,7 +6,7 @@ import { CommonLinks } from '../Navigation/CommonLinks';
 
 export default function Header() {
   return (
-    <header className='sticky top-0 z-10 border-b-2 border-neutral-900 bg-neutral-950 shadow-md'>
+    <header className='sticky top-0 z-10 border-b-2 border-neutral-900 bg-neutral-950/80 shadow-md backdrop-blur-lg'>
       <div className='m-auto grid max-w-7xl items-center gap-4 px-4 py-4 xl:grid-cols-[1fr_auto_1fr]'>
         <Logo />
 
