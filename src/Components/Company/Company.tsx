@@ -21,7 +21,7 @@ export default function Company() {
           </p>
         </TextBlock>
 
-        <PlaceholderVideo />
+        <PlaceholderVideo hasShadow />
       </div>
 
       <section className='grid grid-cols-2 gap-8 p-0'>

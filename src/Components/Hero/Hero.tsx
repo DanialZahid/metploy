@@ -11,7 +11,7 @@ export default function Hero() {
 
   function handleClick() {
     setModalTitle('Watch Our HR Management Platform Tour');
-    setModalChildren(<PlaceholderVideo />);
+    setModalChildren(<PlaceholderVideo hasShadow={false} />);
     setShowModal(true);
   }
 
