@@ -7,16 +7,16 @@ interface NavigationLinksProps {
 
 interface NavigationDesktopProps {
   links: NavigationLinksProps[];
-  section?: string;
+  isHeader?: boolean;
 }
 
 export default function NavigationDesktop({
-  section,
   links,
+  isHeader = false,
 }: NavigationDesktopProps) {
   const item = links.map((item) => (
     <li key={item.name}>
-      <MotionLink to={item.link} text={item.name} />
+      <MotionLink to={item.link}>{item.name}</MotionLink>
     </li>
   ));
 
@@ -24,7 +24,7 @@ export default function NavigationDesktop({
     <nav>
       <ul
         className={
-          section === 'header'
+          isHeader
             ? 'flex items-center gap-10 font-medium'
             : 'grid gap-5 text-sm'.trim()
         }

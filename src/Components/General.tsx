@@ -7,8 +7,9 @@ interface TextBlockProps {
 
 interface LinkProps {
   to: string;
-  text: string;
+  children: React.ReactNode;
   title?: string;
+  className?: string;
   isExternal?: boolean;
 }
 
@@ -44,11 +45,17 @@ export function TextBlock({ children, className }: TextBlockProps) {
   );
 }
 
-export function MotionLink({ to, text, title, isExternal }: LinkProps) {
+export function MotionLink({
+  to,
+  children,
+  title,
+  className,
+  isExternal,
+}: LinkProps) {
   return (
     <motion.a
       href={to}
-      title={title ?? text}
+      title={title}
       initial={{
         textDecoration: 'none #3b82f6',
         textUnderlineOffset: 0,
@@ -60,8 +67,9 @@ export function MotionLink({ to, text, title, isExternal }: LinkProps) {
       transition={{ duration: 0.1 }}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noreferrer' : undefined}
+      className={className}
     >
-      {text}
+      {children}
     </motion.a>
   );
 }

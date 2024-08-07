@@ -52,10 +52,11 @@ export default function Footer() {
             &copy; {new Date().getFullYear()}{' '}
             <MotionLink
               to='https://github.com/DanialZahid'
-              text='Danial Zahid'
               title='Danial Zahid on GitHub'
               isExternal
-            />
+            >
+              Danial Zahid
+            </MotionLink>
           </span>
 
           <motion.a

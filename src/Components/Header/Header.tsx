@@ -10,7 +10,7 @@ export default function Header() {
       <div className='m-auto grid max-w-7xl items-center gap-4 px-4 py-4 lg:grid-cols-[1fr_auto_1fr]'>
         <Logo />
 
-        <NavigationDesktop links={CommonLinks} section='header' />
+        <NavigationDesktop links={CommonLinks} isHeader />
 
         <div className='flex gap-2 justify-self-end'>
           <ButtonTransparent>Log In</ButtonTransparent>
