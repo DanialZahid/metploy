@@ -26,11 +26,7 @@ export default function Company() {
       <section className='grid grid-cols-1 gap-8 p-0 md:grid-cols-2'>
         <div className='flex flex-col justify-between gap-16'>
           <TextBlock>
-            <h2>
-              2700+ Customers Shared
-              <br />
-              their Love for Metploy
-            </h2>
+            <h2>2700+ Customers Shared their Love for Metploy</h2>
 
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
