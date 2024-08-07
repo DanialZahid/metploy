@@ -3,6 +3,7 @@ import { ButtonBlue, ButtonTransparent } from '../Buttons';
 import NavigationDesktop from '../Navigation/NavigationDesktop';
 import Logo from '../Logo';
 import { CommonLinks } from '../Navigation/CommonLinks';
+import NavigationMobile from '../Navigation/NavigationMobile';
 
 export default function Header() {
   return (
@@ -11,6 +12,7 @@ export default function Header() {
         <Logo />
 
         <NavigationDesktop links={CommonLinks} isHeader />
+        <NavigationMobile links={CommonLinks} />
 
         <div className='flex gap-2 justify-self-end'>
           <ButtonTransparent>Log In</ButtonTransparent>
