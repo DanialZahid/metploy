@@ -4,6 +4,7 @@ Metploy is a single-page website created using [React](https://react.dev/) + [Ta
 
 [Design reference](https://dribbble.com/shots/24431808-HR-Landing-Page)
 
+- [View on Cloudflare Pages](https://metploy.pages.dev/)
 - [View on GitHub](https://github.com/DanialZahid/metploy)
 
 ## License
