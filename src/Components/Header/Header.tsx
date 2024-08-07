@@ -1,9 +1,8 @@
 import { ButtonBlue, ButtonTransparent } from '../Buttons';
-
 import NavigationDesktop from '../Navigation/NavigationDesktop';
+import NavigationMobile from '../Navigation/NavigationMobile';
 import Logo from '../Logo';
 import { CommonLinks } from '../Navigation/CommonLinks';
-import NavigationMobile from '../Navigation/NavigationMobile';
 
 export default function Header() {
   return (
