@@ -47,8 +47,8 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
       </div>
 
       <motion.p
-        initial={'closed'}
         variants={toggleVariants}
+        initial={'closed'}
         animate={isOpen ? 'open' : 'closed'}
       >
         {answer}
