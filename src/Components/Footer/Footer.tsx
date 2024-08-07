@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
+        <div className='grid grid-cols-2 gap-8'>
           <div className='grid gap-8'>
             <h2 className='text-base'>Explore</h2>
 

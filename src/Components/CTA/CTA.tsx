@@ -17,7 +17,7 @@ export default function CTA() {
 
   return (
     <section id='contact-us'>
-      <TextBlock className='justify-items-center rounded-xl border-2 border-slate-800/40 bg-gradient-to-tr from-slate-800/20 to-slate-800/40 p-8 text-center md:p-12'>
+      <TextBlock className='justify-items-center rounded-xl border-2 border-slate-800/40 bg-gradient-to-tr from-slate-800/20 to-slate-800/40 p-6 text-center md:p-12'>
         <h2>Let&apos;s Join and Embark on Your Journey with Metploy</h2>
 
         <p>

@@ -19,8 +19,17 @@ export default function Card() {
         variants={gradientVariants}
         whileHover='hover'
         initial='initial'
-        className='grid grid-cols-1 items-center gap-16 rounded-2xl border-2 border-gray-800/40 p-8 md:grid-cols-2 md:p-16'
+        className='grid grid-cols-1 items-center gap-16 rounded-2xl border-2 border-gray-800/40 p-6 md:grid-cols-2 md:p-16'
       >
+        <img
+          className='justify-self-center md:order-last'
+          width={600}
+          src='/assets/img/about.jpg'
+          alt=''
+          loading='lazy'
+          decoding='async'
+        />
+
         <div className='grid content-start justify-items-start gap-8'>
           <h3>
             Elevate Workplace Satisfaction and Performance with Metploy
@@ -36,15 +45,6 @@ export default function Card() {
 
           <ButtonBlue>Level Up Your HR Management</ButtonBlue>
         </div>
-
-        <img
-          className='justify-self-center'
-          width={600}
-          src='/assets/img/about.jpg'
-          alt=''
-          loading='lazy'
-          decoding='async'
-        />
       </motion.div>
     </>
   );

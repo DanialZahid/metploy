@@ -32,7 +32,7 @@ export default function Values() {
   const value = values.map((item) => (
     <div
       key={item.title}
-      className='grid gap-8 rounded-2xl border-2 border-slate-800/80 p-8 transition-colors hover:bg-slate-800/40 md:p-16'
+      className='grid gap-8 rounded-2xl border-2 border-slate-800/80 p-6 transition-colors hover:bg-slate-800/40 md:p-16'
     >
       <span className='text-blue-600'>{item.icon}</span>
 

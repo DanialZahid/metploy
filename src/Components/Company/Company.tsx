@@ -53,8 +53,8 @@ export default function Company() {
           </div>
         </div>
 
-        <div className='grid min-h-[600px] items-end rounded-xl bg-[url(/assets/img/company.jpg)] bg-cover bg-center bg-no-repeat p-8'>
-          <TextBlock className='rounded-xl bg-black/50 p-8 backdrop-blur-sm'>
+        <div className='grid min-h-[600px] items-end rounded-xl bg-[url(/assets/img/company.jpg)] bg-cover bg-center bg-no-repeat p-6 md:p-8'>
+          <TextBlock className='rounded-xl bg-black/50 p-6 backdrop-blur-sm md:p-8'>
             <p className='text-xl italic text-white'>
               &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
               libero. Laborum aliquam recusandae dolores placeat rerum eos ullam
