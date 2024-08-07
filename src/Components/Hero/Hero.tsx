@@ -53,7 +53,7 @@ export default function Hero() {
         width={900}
         src='/assets/img/hero.jpg'
         alt=''
-        loading='lazy'
+        loading='eager'
         decoding='async'
       />
     </section>

@@ -69,6 +69,7 @@ export function MotionLink({ to, text, title, isExternal }: LinkProps) {
 export function PlaceholderVideo({ hasShadow }: PlaceholderVideoProps) {
   return (
     <iframe
+      loading='lazy'
       className={`rounded-xl ${hasShadow ? 'shadow-2xl shadow-blue-600/40' : ''}`.trim()}
       width='100%'
       height='500'
