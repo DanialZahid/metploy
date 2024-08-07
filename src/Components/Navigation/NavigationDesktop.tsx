@@ -14,14 +14,14 @@ export default function NavigationDesktop({
   links,
   isHeader = false,
 }: NavigationDesktopProps) {
-  const item = links.map((item) => (
+  const items = links.map((item) => (
     <li key={item.name}>
       <MotionLink to={item.link}>{item.name}</MotionLink>
     </li>
   ));
 
   return (
-    <nav>
+    <nav className='hidden lg:flex'>
       <ul
         className={
           isHeader
@@ -29,7 +29,7 @@ export default function NavigationDesktop({
             : 'grid gap-5 text-sm'.trim()
         }
       >
-        {item}
+        {items}
       </ul>
     </nav>
   );
