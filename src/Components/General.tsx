@@ -31,9 +31,11 @@ interface InputProps {
     | 'week'
     | 'time'
     | 'color';
+  name?: string;
+  label?: string;
   placeholder?: string;
-  isTextArea?: boolean;
   isRequired?: boolean;
+  isTextArea?: boolean;
 }
 
 export function TextBlock({ children, className }: TextBlockProps) {
@@ -81,25 +83,28 @@ export function PlaceholderVideo({ hasShadow }: PlaceholderVideoProps) {
 
 export function Input({
   type,
+  name,
+  label,
+  isRequired = true,
   placeholder,
   isTextArea = false,
-  isRequired = true,
 }: InputProps) {
   const commonProps = {
-    name: type,
-    autoComplete: type,
-    placeholder: placeholder,
+    type: type,
+    name: name,
     required: isRequired,
+    placeholder: placeholder,
     className:
       'grid rounded-lg bg-neutral-800 px-5 py-3 outline-none ring-blue-600 placeholder:text-sm placeholder:text-gray-200 focus:ring-1 w-full',
   };
 
   return (
-    <label>
+    <label className={label ? 'grid gap-2' : undefined}>
+      {label && <span>{label}</span>}
       {isTextArea ? (
         <textarea {...commonProps} />
       ) : (
-        <input type={type} {...commonProps} />
+        <input {...commonProps} autoComplete='on' />
       )}
     </label>
   );

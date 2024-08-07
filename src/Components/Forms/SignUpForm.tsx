@@ -3,15 +3,43 @@ import { Input } from '../General';
 
 export default function SignUpForm() {
   return (
-    <form className='grid gap-4'>
-      <div className='grid grid-cols-2 gap-4'>
-        <Input placeholder='Enter your full name' type='text' />
-        <Input placeholder='Enter your email address' type='email' />
-        <Input placeholder='Enter your company name' type='text' />
-        <Input placeholder='Enter your phone number' type='tel' />
+    <form className='grid gap-x-4 gap-y-8'>
+      <div className='grid gap-x-4 gap-y-8 md:grid-cols-2'>
+        <Input
+          type='text'
+          name='name'
+          label='Full name'
+          placeholder='Enter your full name'
+        />
+
+        <Input
+          type='email'
+          name='email'
+          label='Email address'
+          placeholder='Enter your email address'
+        />
+
+        <Input
+          type='text'
+          name='company-name'
+          label='Company name'
+          placeholder='Enter your company name'
+        />
+
+        <Input
+          type='tel'
+          name='tel'
+          label='Phone number'
+          placeholder='Enter your phone number'
+        />
       </div>
 
-      <Input isTextArea placeholder='Enter your message' />
+      <Input
+        isTextArea
+        name='message'
+        label='Message'
+        placeholder='Enter your message'
+      />
 
       <ButtonBlue className='rounded-lg'>Sign Up</ButtonBlue>
     </form>
