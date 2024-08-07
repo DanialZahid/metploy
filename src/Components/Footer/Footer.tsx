@@ -11,7 +11,7 @@ import NewsletterForm from '../Forms/NewsletterForm';
 export default function Footer() {
   return (
     <footer className='border-t-2 border-neutral-900 bg-neutral-950'>
-      <div className='m-auto grid max-w-screen-xl grid-cols-2 items-start gap-16 px-4 py-12'>
+      <div className='m-auto grid max-w-screen-xl grid-cols-1 items-start gap-16 px-4 py-12 md:grid-cols-2'>
         <div className='grid gap-12'>
           <div className='grid gap-8'>
             <Logo />
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-8'>
+        <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
           <div className='grid gap-8'>
             <h2 className='text-base'>Explore</h2>
 

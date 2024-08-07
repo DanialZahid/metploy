@@ -9,7 +9,7 @@ export default function Clients() {
     <section className='grid gap-16' id='clients'>
       <h2 className='text-center'>Trusted and Loved by the Teams At</h2>
 
-      <div className='flex flex-wrap items-center justify-center gap-16 text-gray-400'>
+      <div className='flex flex-wrap items-center justify-center gap-12 text-gray-400 md:gap-16'>
         {ClientLogo1}
         {ClientLogo2}
         {ClientLogo3}

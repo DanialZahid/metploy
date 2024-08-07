@@ -18,10 +18,8 @@ export default function Hero() {
   return (
     <section className='grid gap-24 text-center' id='hero'>
       <TextBlock>
-        <h1 className='text-6xl font-bold'>
-          Increase Productivity with
-          <br />
-          Advanced HR Management
+        <h1 className='text-3xl font-bold md:m-auto md:max-w-[900px] md:text-6xl'>
+          Increase Productivity with Advanced HR Management
         </h1>
 
         <p>

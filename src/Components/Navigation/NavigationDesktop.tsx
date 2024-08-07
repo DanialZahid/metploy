@@ -21,7 +21,7 @@ export default function NavigationDesktop({
   ));
 
   return (
-    <nav className='hidden lg:flex'>
+    <nav className={isHeader ? `hidden lg:flex` : undefined}>
       <ul
         className={
           isHeader

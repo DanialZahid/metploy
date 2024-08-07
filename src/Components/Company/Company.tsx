@@ -7,10 +7,9 @@ export default function Company() {
     <section className='grid gap-28' id='company'>
       <div className='grid gap-24'>
         <TextBlock className='text-center'>
-          <h2>
-            Manage an Efficient Schedule System
-            <br />
-            for All Your People and Your Company
+          <h2 className='md:m-auto md:max-w-[900px]'>
+            Manage an Efficient Schedule System for All Your People and Your
+            Company
           </h2>
 
           <p>
@@ -24,7 +23,7 @@ export default function Company() {
         <PlaceholderVideo hasShadow />
       </div>
 
-      <section className='grid grid-cols-2 gap-8 p-0'>
+      <section className='grid grid-cols-1 gap-8 p-0 md:grid-cols-2'>
         <div className='flex flex-col justify-between gap-16'>
           <TextBlock>
             <h2>
@@ -54,7 +53,7 @@ export default function Company() {
           </div>
         </div>
 
-        <div className='grid min-h-[600px] items-end rounded-xl bg-[url(/assets/img/hero.jpg)] p-8'>
+        <div className='grid min-h-[600px] items-end rounded-xl bg-[url(/assets/img/company.jpg)] bg-cover bg-center bg-no-repeat p-8'>
           <TextBlock className='rounded-xl bg-black/50 p-8 backdrop-blur-sm'>
             <p className='text-xl italic text-white'>
               &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,

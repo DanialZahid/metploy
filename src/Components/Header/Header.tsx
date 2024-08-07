@@ -7,13 +7,13 @@ import { CommonLinks } from '../Navigation/CommonLinks';
 export default function Header() {
   return (
     <header className='sticky top-0 z-10 border-b-2 border-neutral-900 bg-neutral-950/80 shadow-md backdrop-blur-lg'>
-      <div className='m-auto grid max-w-7xl items-center gap-4 px-4 py-4 lg:grid-cols-[1fr_auto_1fr]'>
+      <div className='m-auto flex max-w-7xl justify-between gap-4 px-4 py-4 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center'>
         <Logo />
 
         <NavigationDesktop links={CommonLinks} isHeader />
         <NavigationMobile links={CommonLinks} />
 
-        <div className='flex gap-2 justify-self-end'>
+        <div className='hidden gap-2 justify-self-end lg:flex'>
           <ButtonTransparent>Log In</ButtonTransparent>
           <ButtonBlue>Sign Up</ButtonBlue>
         </div>

@@ -19,13 +19,11 @@ export default function NavigationMobile({ links }: NavigationMobileProps) {
   const menuVariants = {
     visible: {
       opacity: 1,
-      scale: 1,
       visibility: 'visible' as const,
     },
 
     hidden: {
       opacity: 0,
-      scale: 0.95,
       visibility: 'hidden' as const,
     },
   };
@@ -77,8 +75,8 @@ export default function NavigationMobile({ links }: NavigationMobileProps) {
         variants={menuVariants}
         initial='hidden'
         animate={isVisible ? 'visible' : 'hidden'}
-        transition={{ type: 'spring', duration: 0.3 }}
-        className='absolute top-6 grid w-fit gap-2 rounded-md bg-neutral-900 p-2 text-sm font-medium'
+        transition={{ duration: 0.3 }}
+        className='absolute top-10 grid w-max -translate-x-[5rem] gap-2 rounded-md bg-neutral-900 p-2 text-sm font-medium'
       >
         {items}
       </motion.ul>

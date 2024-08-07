@@ -19,13 +19,12 @@ export default function Card() {
         variants={gradientVariants}
         whileHover='hover'
         initial='initial'
-        className='grid grid-cols-2 items-center gap-16 rounded-2xl border-2 border-gray-800/40 p-16'
+        className='grid grid-cols-1 items-center gap-16 rounded-2xl border-2 border-gray-800/40 p-8 md:grid-cols-2 md:p-16'
       >
         <div className='grid content-start justify-items-start gap-8'>
           <h3>
-            Elevate Workplace Satisfaction and
-            <br />
-            Performance with Metploy Management
+            Elevate Workplace Satisfaction and Performance with Metploy
+            Management
           </h3>
 
           <p>
@@ -41,7 +40,7 @@ export default function Card() {
         <img
           className='justify-self-center'
           width={600}
-          src='/assets/img/hero.jpg'
+          src='/assets/img/about.jpg'
           alt=''
           loading='lazy'
           decoding='async'
