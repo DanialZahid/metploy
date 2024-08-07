@@ -20,7 +20,7 @@ export default function Company() {
           </p>
         </TextBlock>
 
-        <PlaceholderVideo hasShadow />
+        <PlaceholderVideo id='LXb3EKWsInQ' hasShadow />
       </div>
 
       <section className='grid grid-cols-1 gap-8 p-0 md:grid-cols-2'>

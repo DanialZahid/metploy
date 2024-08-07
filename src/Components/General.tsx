@@ -14,6 +14,7 @@ interface LinkProps {
 }
 
 interface PlaceholderVideoProps {
+  id: string;
   hasShadow: boolean;
 }
 
@@ -74,14 +75,14 @@ export function MotionLink({
   );
 }
 
-export function PlaceholderVideo({ hasShadow }: PlaceholderVideoProps) {
+export function PlaceholderVideo({ id, hasShadow }: PlaceholderVideoProps) {
   return (
     <iframe
       loading='lazy'
       className={`rounded-xl ${hasShadow ? 'shadow-2xl shadow-blue-600/40' : ''}`.trim()}
       width='100%'
       height='500'
-      src='https://www.youtube-nocookie.com/embed/LXb3EKWsInQ'
+      src={`https://www.youtube-nocookie.com/embed/${id}`}
       allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
       referrerPolicy='strict-origin-when-cross-origin'
       title='YouTube Video'
